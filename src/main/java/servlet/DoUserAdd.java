@@ -37,7 +37,7 @@ public class DoUserAdd extends HttpServlet {
             //写的有问题！！！！！
             out.write("<script>");
             out.write("alter<'用户添加失败‘>");
-            out.write("location.herf = 'manage/admin_useradd.jsp");
+            out.write("location.herf = 'manage/admin_useradd.jsp'");
             out.write("</script>");
         }
     }

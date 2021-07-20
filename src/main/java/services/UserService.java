@@ -150,4 +150,10 @@ public class UserService {
         }
         return user;
     }
+
+    public static int userUpdate(User user){
+        String sql = "update user set user_name = ?, user_pwd = ?, user_sex = ?, user_birthday = ?,user_email = ?, user_tel = ?, user_address = ? where user_id = ?";
+        Object[] params = {user.getUser_name(), user.getUser_pwd(), user.getUser_sex(), user.getUser_birthday(), user.getUser_email(), user.getUser_tel(), user.getUser_address(), user.getUser_id()};
+        return DataBaseDao.execute(sql, params);
+    }
 }

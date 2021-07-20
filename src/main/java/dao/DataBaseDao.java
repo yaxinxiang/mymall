@@ -46,7 +46,11 @@ public class DataBaseDao {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }finally {
-            System.out.println("增删改语句执行成功");
+            if(count > 0){
+                System.out.println("增删改语句执行成功");
+            }else{
+                System.out.println("增删改语句执行失败");
+            }
             DataBaseDao.closeAll(null, ps, con);
         }
         return count;

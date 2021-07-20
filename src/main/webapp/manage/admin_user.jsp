@@ -57,7 +57,7 @@
 								<td>${user.user_email}</td>
 								<td>${user.user_tel}</td>
 								<td>
-									<a class="link-update" href="${pageContext.request.contextPath}/manage/admin_douserupdate">修改</a>
+									<a class="link-update" href="${pageContext.request.contextPath}/manage/admin_dousermodify?user_id=${user.user_id}&cpage=${cpage}">修改</a>
 									<a class="link-del" href="#">删除</a>
 								</td>
 							</tr>
